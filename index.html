@@ -26,11 +26,11 @@ Par Temitope</a>
 <p id="ratefeld"></p>
 <form name="rateformular">
 <input name="ratezeichen" type="text" size="14" maxlength="1">
-<input name="ratebutton" type="button" value="Guess" onClick="pruefeZeichen()">
+<input name="ratebutton" type="button" value="Deviner" onClick="pruefeZeichen()">
 
-<p id="gerateneBuchstaben">Wrong Letters:</p>
+<p id="gerateneBuchstaben">lettres que vous avez déjà utilisés:</p>
 <img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br />
-<input name="refresh" type="button" value="New Game" onClick="location.reload()">
+<input name="refresh" type="button" value="Réinitialiser" onClick="location.reload()">
 </form>
       
       <script>
@@ -109,12 +109,12 @@ var pruefeZeichen = function(){
 		}
 	}
 	if(fertig){
-		window.alert("You win!");
+		window.alert("Génial!");
 	}
 	
 	//once you got six wrong letters, you lose
 	if(fehler === 6){
-		window.alert("Uh...I guess you're dead now.");
+		window.alert("Jeu terminé! S'il vous plaît cliquer sur le bouton de réinitialisation pour réessayer");
 	}
 }
 
@@ -126,7 +126,7 @@ window.onload = init;
       </script>
       
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/temilona/Presentation">Presentation</a> is maintained by <a href="https://github.com/temilona">Temitope</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/temilona/Presentation">Présentation</a> est maintenue par <a href="https://github.com/temilona">Temitope</a>.</span>
 
        
       </footer>
