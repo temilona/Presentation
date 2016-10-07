@@ -34,12 +34,19 @@ Par Temitope</a>
       
       <script>
         var lsgwoerter = [
-["T", "R", "E", "E", "H", "O", "U", "S", "E"],
-  ["J","A","V","A","S","C","R","I","P","T"],
-  ["W","E","B","D","E","S","I","G","N"],
-  ["E","D","U","C","A","T","I","O","N"],
-  ["C","H","O","C","O","L","A","T","E"],
-  ["G","E","R","M","A","N","Y"]
+  ["J", "A", "N", "V", "I", "E", "R"],
+  ["F","E","V","R","I","E","R"],
+  ["M","A","R", "S"],
+  ["A","V","R","I","L"],
+  ["M","A","I"],
+  ["J","U","I","N"],
+  ["J","U","I","L","L","E","T"],
+  ["A","O","U","T"],
+  ["S","E","P","T", "E", "M", "B", "R" "E"],
+  ["O","C","T","O", "B",  "R" "E"],
+  ["N","O","V","E", "M", "B", "R" "E"],
+  ["D","E","C","E", "M","B", "R" "E"],
+		
 ]
 var random = Math.floor((Math.random()*(lsgwoerter.length-1))); 
 
@@ -98,12 +105,12 @@ var pruefeZeichen = function(){
 		}
 	}
 	if(fertig){
-		window.alert("You win!");
+		window.alert("Génial! Tu as gagné!");
 	}
 	
 	//once you got six wrong letters, you lose
 	if(fehler === 6){
-		window.alert("Uh...I guess you're dead now.");
+		window.alert("Jeu terminé ! S'il vous plaît Cliquez sur le bouton de réinitialisation pour réessayer");
 	}
 }
 
